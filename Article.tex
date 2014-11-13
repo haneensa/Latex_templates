@@ -1,0 +1,118 @@
+\documentclass [12pt,a4paper] {article}
+\usepackage[margin=1in,includefoot]{geometry}
+\usepackage{lipsum}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{listings}  
+\usepackage{color}
+ \usepackage[toc,page]{appendix}
+ 
+  
+% Graphicx
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+\graphicspath{ {pics/} }
+% Header and Footer 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage\ }
+
+
+
+\begin{document}
+
+%cover page
+\begin{titlepage}
+	\begin{center}
+	\line(1,0){300} \\
+	[0.25in]
+	\huge{\bfseries Report Name}\\
+	[2mm]
+	\line(1,0){200}\\
+	[1.5cm]
+	\textsc{\LARGE Random title}\\
+	[0.75cm]
+	
+
+	\textsc{\Large Company: name of Company\\
+	 Location of company}\\
+	\textsc{\small 
+		Start Date: dd/mm/yyyy
+	}\\
+	\textsc{\small 
+		 End Date: dd/mm/yyyy
+	}\\
+	[5cm]
+
+	
+	\end{center}
+	\begin{flushright}
+	\textsc {\large Name \\
+	\# ID \\
+	dd/mm/yyyy \\}
+	\end{flushright}
+\end{titlepage}
+
+% Front matter stuff
+\pagenumbering{roman}	
+
+% abstract
+\begin{center}
+    \Large
+    \vspace{0.9cm}
+		\section*{Abstract}\label{sec:abstract}
+		\addcontentsline{toc}{section}{\numberline{}Abstract}
+\end{center}
+		\lipsum[1]
+\cleardoublepage
+
+% acknowledgement
+\begin{center}
+    \Large
+    \vspace{0.9cm}
+		\section*{Acknowledgement}\label{sec:Ack}
+		\addcontentsline{toc}{section}{\numberline{}Acknowledgement}
+\end{center}
+		\lipsum[1]
+\cleardoublepage
+
+% table of contents
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+
+% List of figures
+\listoffigures
+\addcontentsline{toc}{section}{\numberline{}List of Figures}
+\cleardoublepage
+
+% Main body stuff
+\pagenumbering{arabic}
+\setcounter {page} {1}
+
+%Internship goals and objectives
+\section{Introduction}\label{sec:One}
+	\lipsum[1]
+		\cleardoublepage
+
+% Summary  
+\section{Summary}\label{sec:four}
+	 \lipsum[1]
+	 	\cleardoublepage
+
+% Conclusion 
+\section{Conclusion}\label{sec:Conclusion}
+	 \lipsum[1]
+	 	\cleardoublepage
+
+
+% Refrences
+
+\bibliographystyle{unsrt}
+\bibliography{sections/ref}
+ 
+ \end {document}

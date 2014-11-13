@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Adobe Garamond Pro} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Haneen \textsc{Mohammed}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Address:} & Jeddah, Saudi Arabia \\
+\textsc{Phone:} & +966 59 909 3384\\
+\textsc{email:} & \href{mailto:hamohammed@effat.edu.sa}{hamohammed@effat.edu.sa}
+\end{tabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+\textsc{Graduation year} 2015 & B.S Electrical \&Computer Engineering \\
+&\textbf{Effat University}, Jeddah, KSA\\
+&\normalsize \textsc{Gpa}: 3.80/4.0\\
+
+%------------------------------------------------
+
+\textsc{August} 2013 - \textsc{May} 2014& Engineering Exchange Program\\
+& {Computer Engineering}\\
+& \textbf{University of Missouri}, Columbia\\
+%------------------------------------------------
+
+ \end{tabular}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{Summer 2014} & General Electric Intern\\ 
+&  \textsc{GE power \&Water}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Spring 2014} & Intern at \textsc{Virtualization, Multimedia and Networking Lab }\\
+& University of Missouri, \emph{Columbia}\\
+& \footnotesize{Worked in the area of “Virtual Networking”. Conducted literature survey, and ran experiments on Software-Defined Network testbeds. }\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Summer 2013} & Research Intern \\
+& \textsc{King Abdulla University of Science and Technology (KAUST)}\\
+& \footnotesize{ \begin{itemize}
+\item Explored inkjet printed electronics using Nano particle inks on flexible substrates. 
+\item Completed tasks during the period of internship include characterization of different inks and substrates, designing and characterizing different Transmission lines.
+\end{itemize}
+}
+\end{tabular}
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Scholarships and Certificates}
+	
+
+\begin{tabular}{rl}
+\textsc{2013-2014} & Global Undergraduate Exchange Program Scholarship\\
+\textsc{2010--2013} & Dean’s list College of Engineering for three years\\
+\textsc{2010} & Effat University Undergraduate Scholarship\\
+\textsc{2010} & Ministry of Higher Education Scholarship\\
+\textsc{2010} & Silver medal in Sixth Arab Chemistry Olympiad \\
+\textsc{2009} & First place in Saudi National Physics Olympiad\\
+\textsc{2006} & Third place in best research paper contest by Saudi science club\\
+
+ \end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+\textsc{English:} & Fluent\\
+
+\textsc{Arabic:} & Mothertongue\\
+
+\textsc{Korean:} & Basic Knowledge\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\begin{tabular}{rl}
+Basic Knowledge: & \textsc{php}, my\textsc{sql}, Java, Verilog, {\fb \LaTeX}\\
+Intermediate Knowledge: & \textsc{C++, C, vba}, Python, Matlab, Web Development,  \textsc{Linux}, Excel\\
+\end{tabular}
+ 
+ 
+\end{document}
